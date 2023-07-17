@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        body{
+            background-color: rgb(138, 221, 173);
+        }
+        h1{ /* Box-Level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            padding: 10px 20px;
+
+            margin: 20px auto 40px auto;
+        
+            outline: 5px dashed salmon;
+        }
+        a{ /* Inline-Level */
+            
+            border: 4px solid red;
+            padding: 10px 10px 10px 10px;
+            
+        }
+        h2{
+            color: blueviolet;
+            font-style: italic;
+        } /* Para mudar de inline para box usa o display: ---- e vice-versa */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <h2>exemplo</h2>
+    <p>Páragrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    <h2>lorem</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et illum iste veniam hic, cupiditate esse totam? Animi, ad sit! Veritatis laudantium quas velit consectetur inventore commodi aut eaque error atque?</p>
+</body>
+</html>

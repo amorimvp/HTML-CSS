@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: blueviolet;
+            background-color: bisque;
+            width: 380px;
+        }
+        a{
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(157, 110, 177);
+        }
+        a:hover{
+            color: rgb(157, 110, 177);
+            text-decoration: underline;
+        }
+        a:active{
+            color: aquamarine;
+        }
+        .especial{
+            background-color: coral;
+        }
+        .especial::before{
+            content: '☛ ';
+        }
+        .especial:after{
+            content: ' ☚';
+        }
+        /*
+        visited para os que ja visitei
+        hover para quando passar o mouse em cima
+        active para quando eu pressionar o mouse
+        especial eu to tornando uma lista diferente
+        */
+    </style>
+    <title>Claszesessses</title>
+</head>
+<body class="body">
+    <h1 class="h1">Personalizando Links</h1>
+    <li><a href="" target="_blank">Repositório Github</a></li>
+    <li><a href="" target="_blank" class="especial">Canal do Youtube</a></li>
+    <li><a href="" target="_blank">Site do CursoemVideo</a></li>
+    <li><a href="tiktok.com">tiktok</a></li>
+</body>
+</html>

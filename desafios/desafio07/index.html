@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para a aproveitar a melhor experiência.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reprodução de Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Raag Pilu - Sandeep Das, Adhiraj Chaudhuri, Bivakar Chaudhuri.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>inflelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Raag Pilu - Sandeep Das, Adhiraj Chaudhuri, Bivakar Chaudhuri.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <p>
+        <a href="network.com">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla quaerat nostrum earum nisi amet dolor odit, et animi iure obcaecati! Consequuntur sapiente earum veritatis ullam quas iusto non eaque.</a>
+    </p>
+    <!-- MP3 WAV OGG opções para compatibilidade-->
+</body>
+</html>
