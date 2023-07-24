@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,9 +20,31 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(165, 162, 162);
+            border-radius: 8px 8px 0px 0px;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(87, 83, 83);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(87, 83, 83);
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: white;
         }
 
         td.num{
@@ -31,13 +54,14 @@
 </head>
 <body>
     <h1>
-        Uso de tabelas grandes
+        Uso de Tabelas Grandes
     </h1>
 
     <!--
         ANATOMIA PARA TABELAS GRANDES
 
         TABLE
+            CAPTION
             T-HEAD
                 DENTRO DO HEAD PODE TER  TR, TD, TH
 
@@ -49,10 +73,13 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -168,10 +195,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, hic fuga. Atque in vitae aut doloribus similique nemo quasi commodi, sint vel totam laudantium beatae aliquam sit rem recusandae soluta!Lore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, doloribus hic aut unde beatae cumque recusandae tempora at itaque aliquam libero, voluptas eos, accusamus numquam dolor rerum ad nostrum in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non libero mollitia tenetur reiciendis quos. Natus dolorum velit debitis hic, mollitia non iusto, tempore accusamus perspiciatis, ab et laboriosam corrupti minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste, totam, nihil dolor quia molestiae excepturi nobis illum ipsa qui quasi accusantium? Unde omnis repellat cupiditate aliquam earum rerum illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit sit culpa commodi quo sed nobis placeat fugit? Doloribus, quidem. Natus expedita eum temporibus voluptatibus rem unde quam sint odit minus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, hic fuga. Atque in vitae aut doloribus similique nemo quasi commodi, sint vel totam laudantium beatae aliquam sit rem recusandae soluta!Lore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, doloribus hic aut unde beatae cumque recusandae tempora at itaque aliquam libero, voluptas eos, accusamus numquam dolor rerum ad nostrum in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non libero mollitia tenetur reiciendis quos. Natus dolorum velit debitis hic, mollitia non iusto, tempore accusamus perspiciatis, ab et laboriosam corrupti minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste, totam, nihil dolor quia molestiae excepturi nobis illum ipsa qui quasi accusantium? Unde omnis repellat cupiditate aliquam earum rerum illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit sit culpa commodi quo sed nobis placeat fugit? Doloribus, quidem. Natus expedita eum temporibus voluptatibus rem unde quam sint odit minus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, hic fuga. Atque in vitae aut doloribus similique nemo quasi commodi, sint vel totam laudantium beatae aliquam sit rem recusandae soluta!Lore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, doloribus hic aut unde beatae cumque recusandae tempora at itaque aliquam libero, voluptas eos, accusamus numquam dolor rerum ad nostrum in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non libero mollitia tenetur reiciendis quos. Natus dolorum velit debitis hic, mollitia non iusto, tempore accusamus perspiciatis, ab et laboriosam corrupti minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste, totam, nihil dolor quia molestiae excepturi nobis illum ipsa qui quasi accusantium? Unde omnis repellat cupiditate aliquam earum rerum illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit sit culpa commodi quo sed nobis placeat fugit? Doloribus, quidem. Natus expedita eum temporibus voluptatibus rem unde quam sint odit minus?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, hic fuga. Atque in vitae aut doloribus similique nemo quasi commodi, sint vel totam laudantium beatae aliquam sit rem recusandae soluta!Lore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, doloribus hic aut unde beatae cumque recusandae tempora at itaque aliquam libero, voluptas eos, accusamus numquam dolor rerum ad nostrum in. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non libero mollitia tenetur reiciendis quos. Natus dolorum velit debitis hic, mollitia non iusto, tempore accusamus perspiciatis, ab et laboriosam corrupti minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste, totam, nihil dolor quia molestiae excepturi nobis illum ipsa qui quasi accusantium? Unde omnis repellat cupiditate aliquam earum rerum illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit sit culpa commodi quo sed nobis placeat fugit? Doloribus, quidem. Natus expedita eum temporibus voluptatibus rem unde quam sint odit minus?</p>
+
 </body>
 </html>
